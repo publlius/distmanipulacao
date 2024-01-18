@@ -1,0 +1,460 @@
+<html>
+<style>
+    .title
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #dbdbdb;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .datap
+    {
+        font-family: Arial;
+        color: #333333;
+        background-color: #f0f0f0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+    }
+    .datai
+    {
+        font-family: Arial;
+        color: #333333;
+        background-color: #ffffff;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+    }
+    .header
+    {
+        font-family: Helvetica;
+        color: #5a5a5a;
+        background-color: #6B6B6B;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    .footer
+    {
+        font-family: Helvetica;
+        color: #5a5a5a;
+        background-color: #A3A3A3;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .break
+    {
+        font-family: Helvetica;
+        color: #ffffff;
+        background-color: #9a9a9a;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .total
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #c7c7c7;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-style: italic;
+    }
+    .breakTotal
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #c6c8d0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-style: italic;
+    }
+</style>
+<table cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tr>
+<td align="left" width="198" colspan="1" class="title">Filial</td>
+<td align="left" width="198" colspan="1" class="title">Vendedor</td>
+<td align="left" width="198" colspan="1" class="title">Catalogo</td>
+<td align="left" width="198" colspan="1" class="title">Cf</td>
+<td align="left" width="198" colspan="1" class="title">Pagamento</td>
+<td align="right" width="198" colspan="1" class="title">R$ Fórmula</td>
+<td align="right" width="198" colspan="1" class="title">Valor venda</td>
+<td align="right" width="198" colspan="1" class="title">% Desconto</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Adriana</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="right" width="198" colspan="1" class="datai">R$ 52,90</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 25,00</td>
+<td align="right" width="198" colspan="1" class="datai">52.741020793951</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109040</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 26,60</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 23,94</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109002</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 25,90</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 19,00</td>
+<td align="right" width="198" colspan="1" class="datai">26.640926640927</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108982</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 43,50</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 39,15</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108539</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 66,90</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 59,76</td>
+<td align="right" width="198" colspan="1" class="datai">10.67264573991</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108561</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 38,50</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 34,65</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109057</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 224,50</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 202,05</td>
+<td align="right" width="198" colspan="1" class="datai">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109055</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 51,90</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 46,71</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109043</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 92,40</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 83,00</td>
+<td align="right" width="198" colspan="1" class="datai">10.17316017316</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109033</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 65,00</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 58,50</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109030</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 93,70</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 84,33</td>
+<td align="right" width="198" colspan="1" class="datai">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109028</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 58,20</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 52,38</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109026</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 45,00</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 36,00</td>
+<td align="right" width="198" colspan="1" class="datai">20</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109024</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 75,90</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 68,31</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109006</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 35,00</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 33,75</td>
+<td align="right" width="198" colspan="1" class="datai">3.5714285714286</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109011</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 52,90</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 47,61</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108992</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 61,20</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 55,00</td>
+<td align="right" width="198" colspan="1" class="datai">10.130718954248</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108985</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 28,40</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 25,56</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108963</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 39,20</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 35,28</td>
+<td align="right" width="198" colspan="1" class="datai">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108956</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 37,40</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 33,66</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108981</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 115,90</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 101,99</td>
+<td align="right" width="198" colspan="1" class="datai">12.001725625539</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109050</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 73,50</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 233,80</td>
+<td align="right" width="198" colspan="1" class="datap">-218.09523809524</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109050</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 233,80</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 73,50</td>
+<td align="right" width="198" colspan="1" class="datai">68.562874251497</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108955</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 40,00</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 36,00</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108950</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 122,40</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 122,40</td>
+<td align="right" width="198" colspan="1" class="datai">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108967</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 260,70</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 234,63</td>
+<td align="right" width="198" colspan="1" class="datap">10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108963</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 39,00</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 35,09</td>
+<td align="right" width="198" colspan="1" class="datai">10.025641025641</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">110173</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 45,00</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 45,00</td>
+<td align="right" width="198" colspan="1" class="datap">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109042</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 0,00</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 78,39</td>
+<td align="right" width="198" colspan="1" class="datai">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">109032</td>
+<td align="left" width="198" colspan="1" class="datap">A vista</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 0,00</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 48,51</td>
+<td align="right" width="198" colspan="1" class="datap">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">109015</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 0,00</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 21,78</td>
+<td align="right" width="198" colspan="1" class="datai">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108952</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 0,00</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 25,74</td>
+<td align="right" width="198" colspan="1" class="datap">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">Centro</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">108964</td>
+<td align="left" width="198" colspan="1" class="datai">A prazo</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 0,00</td>
+<td align="right" width="198" colspan="1" class="datai">R$ 80,01</td>
+<td align="right" width="198" colspan="1" class="datai">0</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">Centro</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">108949</td>
+<td align="left" width="198" colspan="1" class="datap">A prazo</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 0,00</td>
+<td align="right" width="198" colspan="1" class="datap">R$ 42,57</td>
+<td align="right" width="198" colspan="1" class="datap">0</td>
+</tr>
+<tr>
+<td align="center" width="198" colspan="1" class="total"></td>
+<td align="center" width="198" colspan="1" class="total"></td>
+<td align="center" width="198" colspan="1" class="total"></td>
+<td align="center" width="198" colspan="1" class="total"></td>
+<td align="center" width="198" colspan="1" class="total"></td>
+<td align="right" width="198" colspan="1" class="total">R$ 2.145,30</td>
+<td align="right" width="198" colspan="1" class="total">R$ 2.243,05</td>
+<td align="right" width="198" colspan="1" class="total">4.6007324612078</td>
+</tr>
+</table>
+</html>

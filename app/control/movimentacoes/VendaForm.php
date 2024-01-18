@@ -1,0 +1,227 @@
+<?php
+
+class VendaForm extends TPage
+{
+    protected $form;
+    private $formFields = [];
+    private static $database = 'entrega';
+    private static $activeRecord = 'Venda';
+    private static $primaryKey = 'id';
+    private static $formName = 'form_Venda';
+
+    /**
+     * Form constructor
+     * @param $param Request
+     */
+    public function __construct( $param )
+    {
+        parent::__construct();
+
+        if(!empty($param['target_container']))
+        {
+            $this->adianti_target_container = $param['target_container'];
+        }
+
+        // creates the form
+        $this->form = new BootstrapFormBuilder(self::$formName);
+        // define the form title
+        $this->form->setFormTitle("Lançamento de venda");
+
+        $criteria_romaneio_id = new TCriteria();
+
+        $filterVar = TSession::getValue("userunitids");
+        $criteria_romaneio_id->add(new TFilter('farmacia_id', 'in', $filterVar)); 
+
+        $id = new TEntry('id');
+        $data_venda = new TDate('data_venda');
+        $vendido_por_id = new TDBCombo('vendido_por_id', 'permission', 'SystemUsers', 'id', '{login}','login asc'  );
+        $entregue_por_id = new TDBCombo('entregue_por_id', 'permission', 'SystemUsers', 'id', '{login}','login asc'  );
+        $romaneio_id = new TDBUniqueSearch('romaneio_id', 'entrega', 'Romaneio', 'numero_venda', 'numero_venda','numero_venda asc' , $criteria_romaneio_id );
+        $valor_formula = new THidden('valor_formula');
+        $catalogo = new TCheckGroup('catalogo');
+        $cf = new TNumeric('cf', '0', '', '' );
+        $valor_venda = new TNumeric('valor_venda', '2', ',', '.' );
+        $forma_pagamento_id = new TDBRadioGroup('forma_pagamento_id', 'entrega', 'FormaPagamento', 'id', '{descricao}','descricao asc'  );
+        $observacao = new TText('observacao');
+
+        $romaneio_id->setChangeAction(new TAction([$this,'OnValor']));
+
+        $data_venda->addValidation("Data venda (entrega):", new TRequiredValidator()); 
+        $vendido_por_id->addValidation("Vendido por:", new TRequiredValidator()); 
+        $entregue_por_id->addValidation("Entregue por:", new TRequiredValidator()); 
+        $romaneio_id->addValidation("Romaneio:", new TRequiredValidator()); 
+        $forma_pagamento_id->addValidation("Pagamento", new TRequiredValidator()); 
+
+        $id->setEditable(false);
+        $data_venda->setDatabaseMask('yyyy-mm-dd');
+        $romaneio_id->setMinLength(6);
+        $catalogo->addItems(['s'=>'Catálogo']);
+        $catalogo->setValueSeparator(',');
+        $forma_pagamento_id->setUseButton();
+
+        $data_venda->setMask('dd/mm/yyyy');
+        $romaneio_id->setMask('{numero_venda} - {cliente} {numero_venda} ');
+
+        $catalogo->setLayout('horizontal');
+        $forma_pagamento_id->setLayout('horizontal');
+
+        $id->setSize(100);
+        $cf->setSize('70%');
+        $catalogo->setSize(80);
+        $data_venda->setSize(110);
+        $romaneio_id->setSize('70%');
+        $valor_formula->setSize(200);
+        $valor_venda->setSize('50%');
+        $vendido_por_id->setSize('70%');
+        $observacao->setSize('70%', 70);
+        $entregue_por_id->setSize('70%');
+        $forma_pagamento_id->setSize(80);
+
+        $row1 = $this->form->addFields([new TLabel("Id:", null, '14px', null)],[$id],[new TLabel("Data venda (entrega):", '#ff0000', '14px', null)],[$data_venda]);
+        $row2 = $this->form->addFields([new TLabel("Vendido por:", '#ff0000', '14px', null)],[$vendido_por_id],[new TLabel("Entregue por:", '#ff0000', '14px', null)],[$entregue_por_id]);
+        $row3 = $this->form->addFields([new TLabel("Romaneio:", '#ff0000', '14px', null)],[$romaneio_id,$valor_formula,$catalogo]);
+        $row4 = $this->form->addFields([new TLabel("CF:", null, '14px', null)],[$cf],[new TLabel("R$ venda:", '#ff0000', '14px', null)],[$valor_venda]);
+        $row5 = $this->form->addFields([new TLabel("Pagamento:", '#ff0000', '14px', null)],[$forma_pagamento_id]);
+        $row6 = $this->form->addFields([new TLabel("Observações:", null, '14px', null)],[$observacao]);
+
+        // create the form actions
+        $btn_onsave = $this->form->addAction("Salvar", new TAction([$this, 'onSave']), 'far:save #ffffff');
+        $btn_onsave->addStyleClass('btn-primary'); 
+
+        $btn_onclear = $this->form->addAction("Limpar formulário", new TAction([$this, 'onClear']), 'fas:eraser #dd5a43');
+
+        // vertical box container
+        $container = new TVBox;
+        $container->style = 'width: 100%';
+        $container->class = 'form-container';
+        if(empty($param['target_container']))
+        {
+            $container->add(TBreadCrumb::create(["Movimentações","Lançamento de venda"]));
+        }
+        $container->add($this->form);
+
+        parent::add($container);
+
+    }
+
+    public static function OnValor($param = null) 
+    {
+        try 
+        {
+            //code here
+            TTransaction::open(self::$database); // open a transaction
+            $romaneio = new Romaneio($param['key']);
+            TTransaction::close();
+
+            // Código gerado pelo snippet: "Enviar dados para campo"
+            $object = new stdClass();
+            $object->valor_formula = $romaneio->valor_venda;
+            //$object->fieldName = 'insira o novo valor aqui'; //sample
+
+            TForm::sendData(self::$formName, $object);
+
+        }
+        catch (Exception $e) 
+        {
+            new TMessage('error', $e->getMessage());    
+        }
+    }
+
+    public function onSave($param = null) 
+    {
+        try
+        {
+            TTransaction::open(self::$database); // open a transaction
+
+            /**
+            // Enable Debug logger for SQL operations inside the transaction
+            TTransaction::setLogger(new TLoggerSTD); // standard output
+            TTransaction::setLogger(new TLoggerTXT('log.txt')); // file
+            **/
+
+            $messageAction = null;
+
+            $this->form->validate(); // validate form data
+
+            $object = new Venda(); // create an empty object 
+
+            $data = $this->form->getData(); // get form data as array
+            $object->fromArray( (array) $data); // load the object with data
+
+            $object->store(); // save the object 
+
+            $messageAction = new TAction(['VendaForm', 'onShow']);   
+
+                if(!empty($param['target_container']))
+                {
+                    $loadPageParam['target_container'] = $param['target_container'];
+                }
+
+            // get the generated {PRIMARY_KEY}
+            $data->id = $object->id; 
+
+            $this->form->setData($data); // fill form data
+            TTransaction::close(); // close the transaction
+
+            /**
+            // To define an action to be executed on the message close event:
+            $messageAction = new TAction(['className', 'methodName']);
+            **/
+
+            new TMessage('info', AdiantiCoreTranslator::translate('Record saved'), $messageAction);
+
+        }
+        catch (Exception $e) // in case of exception
+        {
+            //</catchAutoCode> 
+
+            new TMessage('error', $e->getMessage()); // shows the exception error message
+            $this->form->setData( $this->form->getData() ); // keep form data
+            TTransaction::rollback(); // undo all pending operations
+        }
+    }
+
+    public function onEdit( $param )
+    {
+        try
+        {
+            if (isset($param['key']))
+            {
+                $key = $param['key'];  // get the parameter $key
+                TTransaction::open(self::$database); // open a transaction
+
+                $object = new Venda($key); // instantiates the Active Record 
+
+                $this->form->setData($object); // fill the form 
+
+                TTransaction::close(); // close the transaction 
+            }
+            else
+            {
+                $this->form->clear();
+            }
+        }
+        catch (Exception $e) // in case of exception
+        {
+            new TMessage('error', $e->getMessage()); // shows the exception error message
+            TTransaction::rollback(); // undo all pending operations
+        }
+    }
+
+    /**
+     * Clear form data
+     * @param $param Request
+     */
+    public function onClear( $param )
+    {
+        $this->form->clear(true);
+
+    }
+
+    public function onShow($param = null)
+    {
+
+    } 
+
+}
+

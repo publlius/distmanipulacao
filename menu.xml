@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <menuitem label="Geral">
+    <icon>fa:archive fa-fw </icon>
+    <menu>  
+</menu>
+  </menuitem>
+  <menuitem label="Cadastros">
+    <icon>fa:pencil-square-o fa-fw </icon>
+    <menu>
+      <menuitem label="Farmácias">
+        <icon>fa:circle-o fa-fw </icon>
+        <action>FarmaciaList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Formas pagamentos">
+        <icon>fa:circle-o fa-fw </icon>
+        <action>FormaPagamentoList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Situações">
+        <icon>fa:circle-o fa-fw </icon>
+        <action>SituacaoList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Vendendores">
+        <icon>fa:circle-o fa-fw </icon>
+        <action>VendendorList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Produtos">
+        <icon>fa:flask fa:fw</icon>
+        <action>ProdutoList</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Movimentações">
+    <icon>fa:globe fa-fw </icon>
+    <menu>
+      <menuitem label="Estoques">
+        <icon>fa:circle-o fa-fw </icon>
+        <action>EstoqueList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Romaneios">
+        <icon>fa:circle-o fa-fw </icon>
+        <action>RomaneioList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Vendas">
+        <icon>fa:dollar fa:fw</icon>
+        <action>VendaList</action>
+      </menuitem>
+      <menuitem label="Venda (balcão)">
+        <icon>fa:money fa:fw</icon>
+        <action>VendaForm</action>
+      </menuitem>
+      <menuitem label="Produção">
+        <icon>fa:flask fa:fw</icon>
+        <action>ProducaoList</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Relatórios">
+    <icon>fa:file-text-o fa-fw </icon>
+    <menu>
+      <menuitem label="Vendas">
+        <icon>fa:dollar fa:fw</icon>
+        <action>VendaReport</action>
+      </menuitem>
+      <menuitem label="Venda Geral">
+        <icon>fa:dollar fa:fw</icon>
+        <action>VendaGeralReport</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Gráficos">
+    <icon>fa:bar-chart-o fa-fw </icon>
+    <menu>  
+</menu>
+  </menuitem>
+  <menuitem label="_t{Administration}">
+    <icon>fa:university fa-fw</icon>
+    <menu>
+      <menuitem label="_t{Programs}">
+        <icon>fa:file-code-o fa-fw</icon>
+        <action>SystemProgramList</action>
+      </menuitem>
+      <menuitem label="_t{Groups}">
+        <icon>fa:users fa-fw</icon>
+        <action>SystemGroupList</action>
+      </menuitem>
+      <menuitem label="_t{Units}">
+        <icon>fa:university fa-fw</icon>
+        <action>SystemUnitList</action>
+      </menuitem>
+      <menuitem label="_t{Users}">
+        <icon>fa:user fa-fw</icon>
+        <action>SystemUserList</action>
+      </menuitem>
+      <menuitem label="_t{Database explorer}">
+        <icon>fa:database fa-fw</icon>
+        <action>SystemDatabaseExplorer</action>
+      </menuitem>
+      <menuitem label="_t{SQL Panel}">
+        <icon>fa:table fa-fw</icon>
+        <action>SystemSQLPanel</action>
+      </menuitem>
+      <menuitem label="PHP Info">
+        <icon>fa:info-circle fa-fw</icon>
+        <action>SystemPHPInfoView</action>
+      </menuitem>
+      <menuitem label="PHP Modules">
+        <icon>fa:info-circle fa-fw</icon>
+        <action>SystemModulesCheckView</action>
+      </menuitem>
+      <menuitem label="_t{Preferences}">
+        <icon>fa:cog fa-fw</icon>
+        <action>SystemPreferenceForm#method=onEdit</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="_t{Documents}">
+    <icon>fa:file-text-o fa-fw</icon>
+    <menu>
+      <menuitem label="_t{Send document}">
+        <icon>fa:cloud-upload fa-fw</icon>
+        <action>SystemDocumentUploadForm</action>
+      </menuitem>
+      <menuitem label="_t{My documents}">
+        <icon>fa:archive fa-fw</icon>
+        <action>SystemDocumentList</action>
+      </menuitem>
+      <menuitem label="_t{Shared with me}">
+        <icon>fa:share-alt fa-fw</icon>
+        <action>SystemSharedDocumentList</action>
+      </menuitem>
+      <menuitem label="_t{Categories}">
+        <icon>fa:th fa-fw</icon>
+        <action>SystemDocumentCategoryFormList</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logs">
+    <icon>fa:desktop fa-fw</icon>
+    <menu>
+      <menuitem label="_t{Access Stats}">
+        <icon>fa:bar-chart fa-fw</icon>
+        <action>SystemAccessLogStats</action>
+      </menuitem>
+      <menuitem label="_t{Access Log}">
+        <icon>fa:key fa-fw</icon>
+        <action>SystemAccessLogList</action>
+      </menuitem>
+      <menuitem label="_t{Change Log}">
+        <icon>fa:film fa-fw</icon>
+        <action>SystemChangeLogView</action>
+      </menuitem>
+      <menuitem label="_t{SQL Log}">
+        <icon>fa:database fa-fw</icon>
+        <action>SystemSqlLogList</action>
+      </menuitem>
+      <menuitem label="_t{PHP Log}">
+        <icon>fa:exclamation-triangle fa-fw</icon>
+        <action>SystemPHPErrorLogView</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Common pages">
+    <menu>
+      <menuitem label="Common page 1">
+        <icon/>
+        <action>CommonPage</action>
+      </menuitem>
+      <menuitem label="Common page 2">
+        <icon/>
+        <action>CommonPage</action>
+      </menuitem>
+      <menuitem label="Common page 3">
+        <icon/>
+        <action>CommonPage</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logout">
+    <icon>fa:sign-out fa-fw</icon>
+    <menu>
+      <menuitem label="Logout">
+        <action>LoginForm#method=onLogout#static=1</action>
+        <icon>fa:sign-out fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+</menu>

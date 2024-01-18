@@ -1,0 +1,3276 @@
+<html>
+<style>
+    .title
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #dbdbdb;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .datap
+    {
+        font-family: Arial;
+        color: #333333;
+        background-color: #f0f0f0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+    }
+    .datai
+    {
+        font-family: Arial;
+        color: #333333;
+        background-color: #ffffff;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+    }
+    .header
+    {
+        font-family: Helvetica;
+        color: #5a5a5a;
+        background-color: #6B6B6B;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    .footer
+    {
+        font-family: Helvetica;
+        color: #5a5a5a;
+        background-color: #A3A3A3;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .break
+    {
+        font-family: Helvetica;
+        color: #ffffff;
+        background-color: #9a9a9a;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .total
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #c7c7c7;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-style: italic;
+    }
+    .breakTotal
+    {
+        font-family: Helvetica;
+        color: #000000;
+        background-color: #c6c8d0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        font-size: 10pt;
+        font-style: italic;
+    }
+</style>
+<table cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tr>
+<td align="left" width="198" colspan="1" class="title">Romaneio</td>
+<td align="left" width="198" colspan="1" class="title">Cliente</td>
+<td align="left" width="198" colspan="1" class="title">Vendido por</td>
+<td align="left" width="198" colspan="1" class="title">Entregue por</td>
+<td align="left" width="198" colspan="1" class="title">Cf</td>
+<td align="left" width="198" colspan="1" class="title">Data venda</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">868243</td>
+<td align="left" width="198" colspan="1" class="datai">NORMI LUIZ VALMORBIDA</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">45173</td>
+<td align="left" width="198" colspan="1" class="datai">2019-09-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">868292</td>
+<td align="left" width="198" colspan="1" class="datap">VICENTE GAZZI COLLE</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">45180</td>
+<td align="left" width="198" colspan="1" class="datap">2019-09-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">868354</td>
+<td align="left" width="198" colspan="1" class="datai">MILDRE  VANZ</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">45194</td>
+<td align="left" width="198" colspan="1" class="datai">2019-09-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870065</td>
+<td align="left" width="198" colspan="1" class="datap">LORILDES DE SOUZA REOLON</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">111</td>
+<td align="left" width="198" colspan="1" class="datap">2019-09-30</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870069</td>
+<td align="left" width="198" colspan="1" class="datai">SANDRA SINHORATTI</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870069</td>
+<td align="left" width="198" colspan="1" class="datap">SANDRA SINHORATTI</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870123</td>
+<td align="left" width="198" colspan="1" class="datai">LAURA LUZ KEMP COITO</td>
+<td align="left" width="198" colspan="1" class="datai">Adriana</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870046</td>
+<td align="left" width="198" colspan="1" class="datap">PEDRO RODRIGUES ALVES</td>
+<td align="left" width="198" colspan="1" class="datap">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datap">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datap">56043</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870067</td>
+<td align="left" width="198" colspan="1" class="datai">JULIANA SANTANA</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870065</td>
+<td align="left" width="198" colspan="1" class="datap">LORILDES DE SOUZA REOLON</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870172</td>
+<td align="left" width="198" colspan="1" class="datai">FARMACIA GEREMIAS FLORESTA (FILIAL 2)</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870182</td>
+<td align="left" width="198" colspan="1" class="datap">DELCIR JOAO ZUFFO</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">54796</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870183</td>
+<td align="left" width="198" colspan="1" class="datai">ALINE APARECIDA VEIGA</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">54794</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870233</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA CRISTINA DE SOUZA</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">54536</td>
+<td align="left" width="198" colspan="1" class="datap">2019-09-27</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870153</td>
+<td align="left" width="198" colspan="1" class="datai">GISELE BUSCH</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870102</td>
+<td align="left" width="198" colspan="1" class="datap">IRES DALLAGNOL POCERA</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46395</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870152</td>
+<td align="left" width="198" colspan="1" class="datai">LUIZ CARLOS SABADIN</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46365</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870142</td>
+<td align="left" width="198" colspan="1" class="datap">IZADORA BERGER</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46358</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870164</td>
+<td align="left" width="198" colspan="1" class="datai">LUCINDA PEROSA</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46346</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870163</td>
+<td align="left" width="198" colspan="1" class="datap">LUCINDA PEROSA</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46346</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870209</td>
+<td align="left" width="198" colspan="1" class="datai">MARCOS RAFAEL P. BOTH</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46342</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870096</td>
+<td align="left" width="198" colspan="1" class="datap">JOSIANE CRISTINA XAVIER</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46330</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870170</td>
+<td align="left" width="198" colspan="1" class="datai">KAIAH LUA ROSSONI DREY</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">56107</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870145</td>
+<td align="left" width="198" colspan="1" class="datap">NAIR OGLIARI</td>
+<td align="left" width="198" colspan="1" class="datap">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datap">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datap">55974</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870146</td>
+<td align="left" width="198" colspan="1" class="datai">NAIR OGLIARI</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">55974</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870134</td>
+<td align="left" width="198" colspan="1" class="datap">LIBERA FANTIN</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datap">56052</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870141</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA DOS ANJOS FLORENCIO</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">56061</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870068</td>
+<td align="left" width="198" colspan="1" class="datap">ROSELY TWARDOWSKI           (FICHA </td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datap">58585</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870154</td>
+<td align="left" width="198" colspan="1" class="datai">ROSALENE FRANCHIN-  VICK</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">58605</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870262</td>
+<td align="left" width="198" colspan="1" class="datap">MARIANE LISBOA</td>
+<td align="left" width="198" colspan="1" class="datap">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datap">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datap">58674</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870189</td>
+<td align="left" width="198" colspan="1" class="datai">SINCLAIR BORTHOLOTO MORIGGI</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">58681</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870271</td>
+<td align="left" width="198" colspan="1" class="datap">SALETE CAPPOANI</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">58563</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870298</td>
+<td align="left" width="198" colspan="1" class="datai">NEUZA APARECIDA TESSARO</td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">58619</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870228</td>
+<td align="left" width="198" colspan="1" class="datap">TEREZINHA RALDI</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">58667</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870033</td>
+<td align="left" width="198" colspan="1" class="datai">ELIZETE SOERGER</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">58419</td>
+<td align="left" width="198" colspan="1" class="datai">2019-09-30</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870175</td>
+<td align="left" width="198" colspan="1" class="datap">DOUGLAS FRUET PERETTI</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datap">58571</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870185</td>
+<td align="left" width="198" colspan="1" class="datai">GALDINA FATIMA DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">58566</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870213</td>
+<td align="left" width="198" colspan="1" class="datap">JACI GROI</td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">58543</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">869841</td>
+<td align="left" width="198" colspan="1" class="datai">IRACEMA RIBEIRO ALVES</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">58092</td>
+<td align="left" width="198" colspan="1" class="datai">2019-09-27</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">869382</td>
+<td align="left" width="198" colspan="1" class="datap">GABRIELI BOLZANI SUZIN</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">57321</td>
+<td align="left" width="198" colspan="1" class="datap">2019-09-20</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">867130</td>
+<td align="left" width="198" colspan="1" class="datai">CLEITON PEREIRA DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">54860</td>
+<td align="left" width="198" colspan="1" class="datai">2019-08-28</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">867626</td>
+<td align="left" width="198" colspan="1" class="datap">NARA LUCIA FIN OLIVEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">56386</td>
+<td align="left" width="198" colspan="1" class="datap">2019-09-12</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870105</td>
+<td align="left" width="198" colspan="1" class="datai">JOCERLI DE F V DE BARROS</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62191</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870320</td>
+<td align="left" width="198" colspan="1" class="datap">JULIANE BARROS BATTAGLIN</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">62194</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870304</td>
+<td align="left" width="198" colspan="1" class="datai">NELCIR FADANI</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49089</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870277</td>
+<td align="left" width="198" colspan="1" class="datap">ROSEMERI FATIMA BARBOSA CAMPAGNARO</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49095</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870204</td>
+<td align="left" width="198" colspan="1" class="datai">FLORA P DAMBROZ</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870305</td>
+<td align="left" width="198" colspan="1" class="datap">ELISA JUSTIMIANO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870300</td>
+<td align="left" width="198" colspan="1" class="datai">SAMUEL RIBEIRO ALVES</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870302</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO MIGUEL MARCONDES DA SILVEIRA </td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49076</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870119</td>
+<td align="left" width="198" colspan="1" class="datai">GRAZIELA B GARCES</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49072</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870198</td>
+<td align="left" width="198" colspan="1" class="datap">MATHEUS JOSE BECKER</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49014</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870201</td>
+<td align="left" width="198" colspan="1" class="datai">WALMIR OZORIO</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870111</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA TEREZINHA DOS SANTOS FERRARI</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870114</td>
+<td align="left" width="198" colspan="1" class="datai">SALETE BORCHARDT</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870107</td>
+<td align="left" width="198" colspan="1" class="datap">LIVIA TAVARES NALERIO</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">48999</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870196</td>
+<td align="left" width="198" colspan="1" class="datai">NATALIA CORREIA</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870052</td>
+<td align="left" width="198" colspan="1" class="datap">GILIANE CONTTI</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">48989</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870115</td>
+<td align="left" width="198" colspan="1" class="datai">JONAS TONIETTO FILHO</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870085</td>
+<td align="left" width="198" colspan="1" class="datap">YONA RIBEIRO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">48986</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870099</td>
+<td align="left" width="198" colspan="1" class="datai">MARLENE DOS SANTOS SCHWINDEN</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">48976</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870109</td>
+<td align="left" width="198" colspan="1" class="datap">NICOLE TEREZINHA SCHIWINDEN</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">48976</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870038</td>
+<td align="left" width="198" colspan="1" class="datai">MAYSA CARVALHO DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870116</td>
+<td align="left" width="198" colspan="1" class="datap">IZELDA KLIN PAGNO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">48945</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870116</td>
+<td align="left" width="198" colspan="1" class="datai">IZELDA KLIN PAGNO</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">48945</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870116</td>
+<td align="left" width="198" colspan="1" class="datap">IZELDA KLIN PAGNO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">48945</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870112</td>
+<td align="left" width="198" colspan="1" class="datai">TEREZINHA RODRIGUES DA CRUZ</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">48851</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870097</td>
+<td align="left" width="198" colspan="1" class="datap">DANIELA BURDA M. FRITSCH</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">48933</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870094</td>
+<td align="left" width="198" colspan="1" class="datai">ANGELO DE DEUS CENDRON</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">48915</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870097</td>
+<td align="left" width="198" colspan="1" class="datap">DANIELA BURDA M. FRITSCH</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">48933</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870053</td>
+<td align="left" width="198" colspan="1" class="datai">ZELITA MARIA BASTIANI SCHINEIKER</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">48891</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870051</td>
+<td align="left" width="198" colspan="1" class="datap">NATIELE REOLON</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870042</td>
+<td align="left" width="198" colspan="1" class="datai">RUBIA CORREA</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">48906</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870040</td>
+<td align="left" width="198" colspan="1" class="datap">AGENOR BARBOSA</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">48890</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870045</td>
+<td align="left" width="198" colspan="1" class="datai">THAIS RIBEIRO HEIDEN</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870044</td>
+<td align="left" width="198" colspan="1" class="datap">ROSANE SALES</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">48741</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870039</td>
+<td align="left" width="198" colspan="1" class="datai">SALETE ALVES DE BARROS</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870280</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA OLIVEIRA GIRARD</td>
+<td align="left" width="198" colspan="1" class="datap">Diane de Lima Coelli</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870117</td>
+<td align="left" width="198" colspan="1" class="datai">ANA CAROLINA BERTOLLO</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870311</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO PEDRO THIBES DE BARROS</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">48955</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870009</td>
+<td align="left" width="198" colspan="1" class="datai">DENILSE SALETE BRUCH ALBERTI</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46474</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870018</td>
+<td align="left" width="198" colspan="1" class="datap">SUZANA DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46466</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870149</td>
+<td align="left" width="198" colspan="1" class="datai">PATRICIA FIORELLI</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870254</td>
+<td align="left" width="198" colspan="1" class="datap">ANTONIO ATAGILDO LINS</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46438</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870309</td>
+<td align="left" width="198" colspan="1" class="datai">ROSANE AP S MARQUES DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870291</td>
+<td align="left" width="198" colspan="1" class="datap">VALDIR DIAS</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49109</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870310</td>
+<td align="left" width="198" colspan="1" class="datai">JOAO CARLOS GRANDO</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870200</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO AIRTON FREDERICK</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870323</td>
+<td align="left" width="198" colspan="1" class="datai">TAMARA VIERO</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">49121</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870279</td>
+<td align="left" width="198" colspan="1" class="datap">VALCIR ROQUE LORENCI</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870136</td>
+<td align="left" width="198" colspan="1" class="datai">ENIO R PELENTIR</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870135</td>
+<td align="left" width="198" colspan="1" class="datap">ROSALINA MUGNOL</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">54808</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870014</td>
+<td align="left" width="198" colspan="1" class="datai">ANTONIA JURACY DOS SANTOS DA SILVA - </td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">54874</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870064</td>
+<td align="left" width="198" colspan="1" class="datap">RENI BORTOLUZZI</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">54879</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870074</td>
+<td align="left" width="198" colspan="1" class="datai">ADRIANA RANDON SAVARIS</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">54815</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870202</td>
+<td align="left" width="198" colspan="1" class="datap">ERIQUELMO OLIVEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870257</td>
+<td align="left" width="198" colspan="1" class="datai">DOUGLAS BASSANI</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870090</td>
+<td align="left" width="198" colspan="1" class="datap">GISELE BISOL</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">54960</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870118</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA IVONI PAVARIN</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870301</td>
+<td align="left" width="198" colspan="1" class="datap">LEONIR DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870278</td>
+<td align="left" width="198" colspan="1" class="datai">EDNA APARECIDA RIBEIRO DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49137</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870278</td>
+<td align="left" width="198" colspan="1" class="datap">EDNA APARECIDA RIBEIRO DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49137</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870108</td>
+<td align="left" width="198" colspan="1" class="datai">NAIANE DE ASSIS</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870037</td>
+<td align="left" width="198" colspan="1" class="datap">SANDRA APARECIDA MOREIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49138</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870208</td>
+<td align="left" width="198" colspan="1" class="datai">ALEX ROSA</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870113</td>
+<td align="left" width="198" colspan="1" class="datap">RUI CARLOS SACRAMENTO</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870322</td>
+<td align="left" width="198" colspan="1" class="datai">ALBERTO RICHTER</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">62163</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870319</td>
+<td align="left" width="198" colspan="1" class="datap">ROQUE VIECELLI MELLO</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">62253</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870318</td>
+<td align="left" width="198" colspan="1" class="datai">ARELBA ANTUNES CESCA</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">62245</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870317</td>
+<td align="left" width="198" colspan="1" class="datap">NEIVA BALDISSERA</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62269</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870093</td>
+<td align="left" width="198" colspan="1" class="datai">VALDOMIRO PEREIRA DE SOUZA </td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62281</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870315</td>
+<td align="left" width="198" colspan="1" class="datap">LIBERA BONETTI </td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">62297</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870122</td>
+<td align="left" width="198" colspan="1" class="datai">FRANCIELI GROTH</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62140</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870127</td>
+<td align="left" width="198" colspan="1" class="datap">DIONATAN CESAR MACULAN</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">62101</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870058</td>
+<td align="left" width="198" colspan="1" class="datai">DANILO DUTRA</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datai">62146</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870106</td>
+<td align="left" width="198" colspan="1" class="datap">ROSA M ZONTA RIBEIRO</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">62131</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870059</td>
+<td align="left" width="198" colspan="1" class="datai">NATALIA DE JESUS FONSECA LAZZARETTI</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">62127</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870169</td>
+<td align="left" width="198" colspan="1" class="datap">LURDES GAIO</td>
+<td align="left" width="198" colspan="1" class="datap">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">58781</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870071</td>
+<td align="left" width="198" colspan="1" class="datai">FLAVIO WEISHEIMER</td>
+<td align="left" width="198" colspan="1" class="datai">Giancarlo Geremias</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">58499</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870303</td>
+<td align="left" width="198" colspan="1" class="datap">BRUNO GIURIATTI</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49303</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870192</td>
+<td align="left" width="198" colspan="1" class="datai">JOSE NAZARENO BARTEL</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">49004</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870214</td>
+<td align="left" width="198" colspan="1" class="datap">KELI MARGO GEHLEN SARTOR</td>
+<td align="left" width="198" colspan="1" class="datap">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datap">Diane de Lima Coelli</td>
+<td align="left" width="198" colspan="1" class="datap">49062</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870214</td>
+<td align="left" width="198" colspan="1" class="datai">KELI MARGO GEHLEN SARTOR</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49067</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870219</td>
+<td align="left" width="198" colspan="1" class="datap">FLORDELICE M D GEHLEN</td>
+<td align="left" width="198" colspan="1" class="datap">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49067</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870219</td>
+<td align="left" width="198" colspan="1" class="datai">FLORDELICE M D GEHLEN</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49067</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870194</td>
+<td align="left" width="198" colspan="1" class="datap">ANDREIA MARIA DALLAZEM</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49068</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870194</td>
+<td align="left" width="198" colspan="1" class="datai">ANDREIA MARIA DALLAZEM</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49068</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870190</td>
+<td align="left" width="198" colspan="1" class="datap">SERGIO FRITSCH</td>
+<td align="left" width="198" colspan="1" class="datap">Giancarlo Geremias</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49015</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870210</td>
+<td align="left" width="198" colspan="1" class="datai">JANE VASCONCELLOS </td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870216</td>
+<td align="left" width="198" colspan="1" class="datap">ADELAIDE SALETE ZINI</td>
+<td align="left" width="198" colspan="1" class="datap">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870217</td>
+<td align="left" width="198" colspan="1" class="datai">ADELAIDE SALETE ZINI</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870191</td>
+<td align="left" width="198" colspan="1" class="datap">CLAUDETE ALVES DE LIMA </td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870211</td>
+<td align="left" width="198" colspan="1" class="datai">CARLOS KUSSTER</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Diane de Lima Coelli</td>
+<td align="left" width="198" colspan="1" class="datai">49016</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870122</td>
+<td align="left" width="198" colspan="1" class="datap">FRANCIELI GROTH</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49096</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870423</td>
+<td align="left" width="198" colspan="1" class="datai">NORMA SCRAMOCIN STIEVEN </td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870543</td>
+<td align="left" width="198" colspan="1" class="datap">MURILO RODRIGUES DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">49258</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870120</td>
+<td align="left" width="198" colspan="1" class="datai">VALMIR JOSE BEAL</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49253</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870120</td>
+<td align="left" width="198" colspan="1" class="datap">VALMIR JOSE BEAL</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">49253</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870548</td>
+<td align="left" width="198" colspan="1" class="datai">CLINICA VETERIN?RIA BICHO DA MA??</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49266</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870561</td>
+<td align="left" width="198" colspan="1" class="datap">MARCIO PEREIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870559</td>
+<td align="left" width="198" colspan="1" class="datai">ANAIR DOS SANTOS POSANSKE</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870566</td>
+<td align="left" width="198" colspan="1" class="datap">VALEICA C BAHR DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870567</td>
+<td align="left" width="198" colspan="1" class="datai">TANIA DE BORTOLI</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870498</td>
+<td align="left" width="198" colspan="1" class="datap">LUIZ HENRIQUE DE OLIVEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">49274</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870537</td>
+<td align="left" width="198" colspan="1" class="datai">EDNA MARIA DA SILVA UENO</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49127</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870539</td>
+<td align="left" width="198" colspan="1" class="datap">PAULO UENO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49127</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870537</td>
+<td align="left" width="198" colspan="1" class="datai">EDNA MARIA DA SILVA UENO</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49127</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870541</td>
+<td align="left" width="198" colspan="1" class="datap">EDER NELIO DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49276</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870437</td>
+<td align="left" width="198" colspan="1" class="datai">MARLI SANTINI ZONTA</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870535</td>
+<td align="left" width="198" colspan="1" class="datap">PATRICIA ZANELA DE CORDUVA</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870410</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA GORETE MATTOS </td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diane de Lima Coelli</td>
+<td align="left" width="198" colspan="1" class="datai">49229</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870276</td>
+<td align="left" width="198" colspan="1" class="datap">DAIANE CRISTINA FERREIRA BELOTTO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49190</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870212</td>
+<td align="left" width="198" colspan="1" class="datai">GISLENE CROTT REZZADORI</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49199</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870312</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA LAZZAROTTO</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49206</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870420</td>
+<td align="left" width="198" colspan="1" class="datai">GILDA MARTINS AZEVEDO</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">49205</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870372</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO BATISTA PROENCIO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">49209</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870275</td>
+<td align="left" width="198" colspan="1" class="datai">ANA BELLA - ESPACO DA BELEZA</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870307</td>
+<td align="left" width="198" colspan="1" class="datap">FLAVIANA RIBEIRO DE DEUS</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870461</td>
+<td align="left" width="198" colspan="1" class="datai">AUGUSTO CARDOSO MATOS </td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870421</td>
+<td align="left" width="198" colspan="1" class="datap">VINICIUS SCHWINDEN</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49222</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870419</td>
+<td align="left" width="198" colspan="1" class="datai">SARA PAIVA</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870592</td>
+<td align="left" width="198" colspan="1" class="datap">IONE TIEPPO DE SOUZA</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">46566</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870589</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA CRISTINA DE SOUZA</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">46565</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870326</td>
+<td align="left" width="198" colspan="1" class="datap">ALENOR LOPES</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870553</td>
+<td align="left" width="198" colspan="1" class="datai">CLAUDIA BOGO DOS ANJOS</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">56435</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870366</td>
+<td align="left" width="198" colspan="1" class="datap">EDIMAR APARECIDA THIBES DE CAMPOS</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">54967</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870470</td>
+<td align="left" width="198" colspan="1" class="datai">VILSON JOSE PIROLLI</td>
+<td align="left" width="198" colspan="1" class="datai">Sandrini Izabel do Amaral</td>
+<td align="left" width="198" colspan="1" class="datai">Sandrini Izabel do Amaral</td>
+<td align="left" width="198" colspan="1" class="datai">56270</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870426</td>
+<td align="left" width="198" colspan="1" class="datap">TEREZINHA TRENTIN</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">54947</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870512</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA MADALENA OLIMPIO KANARKI</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">56290</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870369</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA LUCIA PINTO</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">56398</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870334</td>
+<td align="left" width="198" colspan="1" class="datai">JACSON SANTANA</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870367</td>
+<td align="left" width="198" colspan="1" class="datap">MAGALY VAZ DE SOUZA</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870454</td>
+<td align="left" width="198" colspan="1" class="datai">HEMODIALISE</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">56338</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870527</td>
+<td align="left" width="198" colspan="1" class="datap">SILIANE BET</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Sandrini Izabel do Amaral</td>
+<td align="left" width="198" colspan="1" class="datap">56519</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870465</td>
+<td align="left" width="198" colspan="1" class="datai">SANTINA GENI PANAZZOLO</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870398</td>
+<td align="left" width="198" colspan="1" class="datap">LUCIANA PEDROSO DE CAMPOS</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870456</td>
+<td align="left" width="198" colspan="1" class="datai">LIRIA ALBERTINA BISCARO</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870504</td>
+<td align="left" width="198" colspan="1" class="datap">ANA APARECIDA MEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">55043</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870518</td>
+<td align="left" width="198" colspan="1" class="datai">ANTONELA SERAFINI</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">54998</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870466</td>
+<td align="left" width="198" colspan="1" class="datap">SALETE VERONA</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870534</td>
+<td align="left" width="198" colspan="1" class="datai">IVANIR CARMINAT FAGANELLO</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datai">55079</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870507</td>
+<td align="left" width="198" colspan="1" class="datap">ROZEANE DA LUZ DAPPER </td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">55073</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870581</td>
+<td align="left" width="198" colspan="1" class="datai">LAURO SPOHR</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">55104</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870467</td>
+<td align="left" width="198" colspan="1" class="datap">MURILO CARMINATTI</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap">55168</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870609</td>
+<td align="left" width="198" colspan="1" class="datai">LEONILDA MENGATTO</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">55108</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870316</td>
+<td align="left" width="198" colspan="1" class="datap">IVANILDE DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">62377</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870205</td>
+<td align="left" width="198" colspan="1" class="datai">ANTONIO SARTORI</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62335</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870649</td>
+<td align="left" width="198" colspan="1" class="datap">ADRIANA WOLFF CRESTANI</td>
+<td align="left" width="198" colspan="1" class="datap">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62514</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870438</td>
+<td align="left" width="198" colspan="1" class="datai">RAFAEL BARBIERI</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870732</td>
+<td align="left" width="198" colspan="1" class="datap">ALCI NEIVERTH</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">56513</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870712</td>
+<td align="left" width="198" colspan="1" class="datai">CLINICA FEMINA</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870330</td>
+<td align="left" width="198" colspan="1" class="datap">CARLA ADRIANA LIEBL</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">56563</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870742</td>
+<td align="left" width="198" colspan="1" class="datai">MAYARA CARDOSO</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">56477</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870844</td>
+<td align="left" width="198" colspan="1" class="datap">ALESSANDRA ZANELLA ANDRIANI</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Sandrini Izabel do Amaral</td>
+<td align="left" width="198" colspan="1" class="datap">56615</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870769</td>
+<td align="left" width="198" colspan="1" class="datai">RAIMUNDO SERAFINI</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">56623</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870841</td>
+<td align="left" width="198" colspan="1" class="datap">TELMA REOLAO</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datap">56629</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870773</td>
+<td align="left" width="198" colspan="1" class="datai">CLEMENTINA SANTINA DEMENECK</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46749</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870771</td>
+<td align="left" width="198" colspan="1" class="datap">SERGIO ANTUNES</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46749</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870777</td>
+<td align="left" width="198" colspan="1" class="datai">LUZIANE PETRY</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46742</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870604</td>
+<td align="left" width="198" colspan="1" class="datap">ELSA DE DEUS</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870839</td>
+<td align="left" width="198" colspan="1" class="datai">BENICIO CUNHA</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46729</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870729</td>
+<td align="left" width="198" colspan="1" class="datap">JOSE COLLE</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870751</td>
+<td align="left" width="198" colspan="1" class="datai">ARTHUR DE OLIVEIRA</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46736</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870580</td>
+<td align="left" width="198" colspan="1" class="datap">JOANEZ SANTI</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46728</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870575</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA ZITA VAILATTI SANTI</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46728</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870812</td>
+<td align="left" width="198" colspan="1" class="datap">ROBSON ZAGO</td>
+<td align="left" width="198" colspan="1" class="datap">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46727</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870783</td>
+<td align="left" width="198" colspan="1" class="datai">SANDRA BALDO</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46726</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870646</td>
+<td align="left" width="198" colspan="1" class="datap">EUNIR ANTONIO PAGNUSSATTI</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46725</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870798</td>
+<td align="left" width="198" colspan="1" class="datai">MIGUEL PIROLLI ZAGGO</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46724</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870606</td>
+<td align="left" width="198" colspan="1" class="datap">THAISA DEVENZI</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870785</td>
+<td align="left" width="198" colspan="1" class="datai">MONALISA TEDESCO</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870832</td>
+<td align="left" width="198" colspan="1" class="datap">FABIO MORESCO</td>
+<td align="left" width="198" colspan="1" class="datap">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46707</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870776</td>
+<td align="left" width="198" colspan="1" class="datai">MARISTELA OGLIARI- NINJA</td>
+<td align="left" width="198" colspan="1" class="datai">Viviane Salete Alves dos Reis</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46698</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870707</td>
+<td align="left" width="198" colspan="1" class="datap">EMANUELY O FINCK  ZOLET</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46714</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870008</td>
+<td align="left" width="198" colspan="1" class="datai">NILSON ALBERTO COSER</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870648</td>
+<td align="left" width="198" colspan="1" class="datap">HAILA SPILLER DOS REIS </td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46706</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870329</td>
+<td align="left" width="198" colspan="1" class="datai">LUIZ CARLOS SABADIN</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46652</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870716</td>
+<td align="left" width="198" colspan="1" class="datap">RAFAELA NUNES DA SILVA</td>
+<td align="left" width="198" colspan="1" class="datap">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46671</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870780</td>
+<td align="left" width="198" colspan="1" class="datai">CLAUDIA ZIMMER FOGA?A</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46697</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870481</td>
+<td align="left" width="198" colspan="1" class="datap">REGINA PICOLI CAVAZINI</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46491</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870480</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA ZELIA RIGO</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46491</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870482</td>
+<td align="left" width="198" colspan="1" class="datap">OTAVIO JOSE SOUZA MACHADO</td>
+<td align="left" width="198" colspan="1" class="datap">Gessica de Oliveira</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870266</td>
+<td align="left" width="198" colspan="1" class="datai">ERNA FIERGUTZ</td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46408</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870258</td>
+<td align="left" width="198" colspan="1" class="datap">ALCIR CAMILO PIOVESAN</td>
+<td align="left" width="198" colspan="1" class="datap">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datap">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datap">58494</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870215</td>
+<td align="left" width="198" colspan="1" class="datai">CLEUSA ARCARI</td>
+<td align="left" width="198" colspan="1" class="datai">Gessica de Oliveira</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46364</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870222</td>
+<td align="left" width="198" colspan="1" class="datap">JORGE LOPES DE OLIVEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46362</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870282</td>
+<td align="left" width="198" colspan="1" class="datai">CARMEM MIRANDA DE O CARVALHO</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46410</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870826</td>
+<td align="left" width="198" colspan="1" class="datap">DEVANIR ZORNITTA</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870827</td>
+<td align="left" width="198" colspan="1" class="datai">ORIDES ZORNITA</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870825</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO ITAMAR ZABLOSKI</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870709</td>
+<td align="left" width="198" colspan="1" class="datai">ADRIELI ALVES DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870662</td>
+<td align="left" width="198" colspan="1" class="datap">SALETE SCHEILA BARZOTTO</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49430</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870110</td>
+<td align="left" width="198" colspan="1" class="datai">WILSON RIBEIRO CARDOSO JUNIOR</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49454</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870681</td>
+<td align="left" width="198" colspan="1" class="datap">NALVA DENIZE GIRALDI DE CAMARGO</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870671</td>
+<td align="left" width="198" colspan="1" class="datai">OLINDA ZELINDA RECH</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49462</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870560</td>
+<td align="left" width="198" colspan="1" class="datap">LUIZ CARLOS FERREIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870684</td>
+<td align="left" width="198" colspan="1" class="datai">BEATRIZ VITORIA CONTE</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870816</td>
+<td align="left" width="198" colspan="1" class="datap">CAMILA R GIACOMETTI</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49485</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870193</td>
+<td align="left" width="198" colspan="1" class="datai">ELIANE SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870851</td>
+<td align="left" width="198" colspan="1" class="datap">JOSE VANDERLEI CONTE</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870818</td>
+<td align="left" width="198" colspan="1" class="datai">VALDENIR O CASALI </td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49480</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870053</td>
+<td align="left" width="198" colspan="1" class="datap">ZELITA MARIA BASTIANI SCHINEIKER</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">48891</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870424</td>
+<td align="left" width="198" colspan="1" class="datai">JUSTINA S. DE DEUS FOSSATTI</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870631</td>
+<td align="left" width="198" colspan="1" class="datap">HELIO KNOP</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49420</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870772</td>
+<td align="left" width="198" colspan="1" class="datai">ELOIR TELES DE DEUS SCHULER</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870626</td>
+<td align="left" width="198" colspan="1" class="datap">ARTHUR RAFAEL GAULOSKI SENS </td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49367</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870635</td>
+<td align="left" width="198" colspan="1" class="datai">FLAVIO VIVAN</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">55205</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870644</td>
+<td align="left" width="198" colspan="1" class="datap">REGINALDO HAUWETTER</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870663</td>
+<td align="left" width="198" colspan="1" class="datai">ANA ELIZA CIVIDINI</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870455</td>
+<td align="left" width="198" colspan="1" class="datap">MATHEUS DELL VALLE GUARNIERI</td>
+<td align="left" width="198" colspan="1" class="datap">Stefany Alves dos Santos Antunes</td>
+<td align="left" width="198" colspan="1" class="datap">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870678</td>
+<td align="left" width="198" colspan="1" class="datai">GUILHERME SCHULER DAMBROS</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">Elbert Barauna</td>
+<td align="left" width="198" colspan="1" class="datai">55286</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870708</td>
+<td align="left" width="198" colspan="1" class="datap">IVONIR THIBES </td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">62542</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870710</td>
+<td align="left" width="198" colspan="1" class="datai">DIANA T RIBEIRO</td>
+<td align="left" width="198" colspan="1" class="datai">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datai">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datai">62444</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870704</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA NADIR RIBEIRO</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datap">62580</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870711</td>
+<td align="left" width="198" colspan="1" class="datai">ARIANE M M BULOW</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">62592</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870650</td>
+<td align="left" width="198" colspan="1" class="datap">DEBORA GUIDINI</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62632</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870438</td>
+<td align="left" width="198" colspan="1" class="datai">RAFAEL BARBIERI</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">62255</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870104</td>
+<td align="left" width="198" colspan="1" class="datap">TAYANE HELENA RIBEIRO DE GOSS</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62005</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870584</td>
+<td align="left" width="198" colspan="1" class="datai">GUSTAVO MUNZLINGER DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datai">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datai">59244</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870583</td>
+<td align="left" width="198" colspan="1" class="datap">CLARA ALVES </td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datap">59286</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870442</td>
+<td align="left" width="198" colspan="1" class="datai">DIVA BOM GUZZI </td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">59311</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870270</td>
+<td align="left" width="198" colspan="1" class="datap">EDITH WENGRATT</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">59431</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870766</td>
+<td align="left" width="198" colspan="1" class="datai">ILVA M SANTI BENEDETTI</td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datai">59372</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870459</td>
+<td align="left" width="198" colspan="1" class="datap">TEREZINHA MARIA SERIGHELI PASSONI</td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">59422</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870789</td>
+<td align="left" width="198" colspan="1" class="datai">SILVANA MAFI SCHIMIDT</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datai">59419</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870743</td>
+<td align="left" width="198" colspan="1" class="datap">DAIANE PETSCH</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">Daiane Borges</td>
+<td align="left" width="198" colspan="1" class="datap">59374</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870602</td>
+<td align="left" width="198" colspan="1" class="datai">PAULO TONETTA</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">59406</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870619</td>
+<td align="left" width="198" colspan="1" class="datap">JOSE OSMAR RIBEIRO</td>
+<td align="left" width="198" colspan="1" class="datap">Juliana Aparecida Ribeiro</td>
+<td align="left" width="198" colspan="1" class="datap">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datap">59705</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870472</td>
+<td align="left" width="198" colspan="1" class="datai">RHEINTRAUB ZAPF</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datai">58929</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870473</td>
+<td align="left" width="198" colspan="1" class="datap">RHEINTRAUB ZAPF</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">58745</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870339</td>
+<td align="left" width="198" colspan="1" class="datai">VANESSA RECH</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">Vanessa Tonetta</td>
+<td align="left" width="198" colspan="1" class="datai">58758</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870843</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO CARLOS DE MORAIS</td>
+<td align="left" width="198" colspan="1" class="datap">Sandrini Izabel do Amaral</td>
+<td align="left" width="198" colspan="1" class="datap">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datap">56664</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870788</td>
+<td align="left" width="198" colspan="1" class="datai">ZOLENI MENGATTO</td>
+<td align="left" width="198" colspan="1" class="datai">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datai">Carla Adriana Liebl</td>
+<td align="left" width="198" colspan="1" class="datai">56698</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870842</td>
+<td align="left" width="198" colspan="1" class="datap">VALDINO JOSE FANTIN</td>
+<td align="left" width="198" colspan="1" class="datap">Patricia Vigolo</td>
+<td align="left" width="198" colspan="1" class="datap">Sandrini Izabel do Amaral</td>
+<td align="left" width="198" colspan="1" class="datap">56700</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870808</td>
+<td align="left" width="198" colspan="1" class="datai">ROQUE RHODEN</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46802</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870506</td>
+<td align="left" width="198" colspan="1" class="datap">PRICILA COPPINI</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46603</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870781</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA SILVANA MOURA</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46766</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870737</td>
+<td align="left" width="198" colspan="1" class="datap">PATRICIA FABRIS</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46774</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870477</td>
+<td align="left" width="198" colspan="1" class="datai">DIRCE TRAGANCIN BOLSANI</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46520</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870517</td>
+<td align="left" width="198" colspan="1" class="datap">GLEIZE DANIELI</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46555</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870162</td>
+<td align="left" width="198" colspan="1" class="datai">MARILUCIA CARELLI</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46297</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-01</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870556</td>
+<td align="left" width="198" colspan="1" class="datap">CLAIR VERONESE</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46616</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870590</td>
+<td align="left" width="198" colspan="1" class="datai">SIRIA VESCOVI</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46612</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870344</td>
+<td align="left" width="198" colspan="1" class="datap">WILLIAN GUZI</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46611</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870342</td>
+<td align="left" width="198" colspan="1" class="datai">VILSON JOSE GUZZI</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46611</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870458</td>
+<td align="left" width="198" colspan="1" class="datap">CLAUDIO ANDREOLA</td>
+<td align="left" width="198" colspan="1" class="datap">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46607</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870345</td>
+<td align="left" width="198" colspan="1" class="datai">ZELIR MARIA LASKOSKI</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datai">46605</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870237</td>
+<td align="left" width="198" colspan="1" class="datap">DOMINGOS ALTAIR COSTA</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">109779</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870645</td>
+<td align="left" width="198" colspan="1" class="datai">LEONILDA APARECIDA SANTANA DORNELLES</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109777</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870659</td>
+<td align="left" width="198" colspan="1" class="datap">SONIA MAZURECK ZAMBONIN</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">46821</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870147</td>
+<td align="left" width="198" colspan="1" class="datai">AIRTON DE DEUS</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109765</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870508</td>
+<td align="left" width="198" colspan="1" class="datap">IVANEZ ANTONIO BOSS</td>
+<td align="left" width="198" colspan="1" class="datap">Giulio Bervian Pompeo</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">46601</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870598</td>
+<td align="left" width="198" colspan="1" class="datai">TERESINHA CHERUBIM</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">Janaina</td>
+<td align="left" width="198" colspan="1" class="datai">46584</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870829</td>
+<td align="left" width="198" colspan="1" class="datap">MATHEUS CAMPOS SILVEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">49537</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870463</td>
+<td align="left" width="198" colspan="1" class="datai">JULIA CEMIN</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109729</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870147</td>
+<td align="left" width="198" colspan="1" class="datap">AIRTON DE DEUS</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109765</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870585</td>
+<td align="left" width="198" colspan="1" class="datai">EDI AP PATRICIO CALIARI</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">109760</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870577</td>
+<td align="left" width="198" colspan="1" class="datap">CLADIR PERAZZOLI</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">10746</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870351</td>
+<td align="left" width="198" colspan="1" class="datai">ANTILIO CORREIA DE SIQUEIRA</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">109731</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870611</td>
+<td align="left" width="198" colspan="1" class="datap">OLGA LOCATELLI</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109724</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870656</td>
+<td align="left" width="198" colspan="1" class="datai">DEISE CRESTANI</td>
+<td align="left" width="198" colspan="1" class="datai">Gessica de Oliveira</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109688</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870616</td>
+<td align="left" width="198" colspan="1" class="datap">CLEITON PEREIRA DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">870616</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870641</td>
+<td align="left" width="198" colspan="1" class="datai">JULIO CLESIO CARDOSO AIRES</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109462</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870610</td>
+<td align="left" width="198" colspan="1" class="datap">ADELINO ZAGO</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">109669</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870569</td>
+<td align="left" width="198" colspan="1" class="datai">SABRINA STRATMAN </td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">109664</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870685</td>
+<td align="left" width="198" colspan="1" class="datap">LEONICE  ZAGO</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109812</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-11</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870683</td>
+<td align="left" width="198" colspan="1" class="datai">NEUDI A DA SILVA </td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109501</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870725</td>
+<td align="left" width="198" colspan="1" class="datap">VIVIAN B MOREIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap">109939</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870822</td>
+<td align="left" width="198" colspan="1" class="datai">RENILDA COSTA LUDWIG</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109929</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870791</td>
+<td align="left" width="198" colspan="1" class="datap">JAIR RODRIGUES DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datap">109919</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870471</td>
+<td align="left" width="198" colspan="1" class="datai">ALFREDO ANSILIERO</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109227</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870555</td>
+<td align="left" width="198" colspan="1" class="datap">LUCAS WILLIAM NAISK</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109307</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870640</td>
+<td align="left" width="198" colspan="1" class="datai">SIRLEI CRISTINA ZAGO</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109887</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870761</td>
+<td align="left" width="198" colspan="1" class="datap">LAURENTINO ALMEIDA</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109889</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870744</td>
+<td align="left" width="198" colspan="1" class="datai">JOSIANE SALETE SWARTZ ALBERTI</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109882</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870724</td>
+<td align="left" width="198" colspan="1" class="datap">MARGARETE DOS SANTOS BORTOKOSKI</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109880</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870746</td>
+<td align="left" width="198" colspan="1" class="datai">MARGARETE SCALABRIN</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">109881</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870754</td>
+<td align="left" width="198" colspan="1" class="datap">MARINES CORDEIRO</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109874</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870643</td>
+<td align="left" width="198" colspan="1" class="datai">JANAINA G B DA COSTA</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109402</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870450</td>
+<td align="left" width="198" colspan="1" class="datap">ANA SALETE DEON RAMPON</td>
+<td align="left" width="198" colspan="1" class="datap">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109869</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870686</td>
+<td align="left" width="198" colspan="1" class="datai">ANA MARIA DE LIMA</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">109830</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870759</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA JULIA CHIASSI DE LIMA</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109653</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870554</td>
+<td align="left" width="198" colspan="1" class="datai">CARLOTA PADILHA CAMPOS </td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">109829</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870728</td>
+<td align="left" width="198" colspan="1" class="datap">SERGIO LUIZ DALABRIDA</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">Janaina</td>
+<td align="left" width="198" colspan="1" class="datap">109854</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870445</td>
+<td align="left" width="198" colspan="1" class="datai">MARLENE VIERGUTZ</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">109185</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870639</td>
+<td align="left" width="198" colspan="1" class="datap">ALCIDES PIROLLI</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109842</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870790</td>
+<td align="left" width="198" colspan="1" class="datai">LEA BERENICE DE QUEIROZ</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">109943</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870515</td>
+<td align="left" width="198" colspan="1" class="datap">CLEUSA ZORNITTA BARIVIEIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109641</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870479</td>
+<td align="left" width="198" colspan="1" class="datai">FABIANE MEZAROBA</td>
+<td align="left" width="198" colspan="1" class="datai">Sinara Fatima Zenere</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109766</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870872</td>
+<td align="left" width="198" colspan="1" class="datap">INEZ WASEN PIQUETTI</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109840</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870763</td>
+<td align="left" width="198" colspan="1" class="datai">OLGA FIORESE</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">109720</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870356</td>
+<td align="left" width="198" colspan="1" class="datap">MARISA BUENO REIS</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datap">110081</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870898</td>
+<td align="left" width="198" colspan="1" class="datai">PEDRO FRANCISCO BRAZ</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">110071</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870902</td>
+<td align="left" width="198" colspan="1" class="datap">LORENA KLEIN BRAZ</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datap">110071</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870774</td>
+<td align="left" width="198" colspan="1" class="datai">ELIANE APARECIDA DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">110030</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870873</td>
+<td align="left" width="198" colspan="1" class="datap">ALAIDES SALETE LISBOA</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109843</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870373</td>
+<td align="left" width="198" colspan="1" class="datai">MAFALDA WILLMSEN</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">110039</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870355</td>
+<td align="left" width="198" colspan="1" class="datap">ELZA PACHECO DOS SANTOS</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">110029</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-03</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870557</td>
+<td align="left" width="198" colspan="1" class="datai">PEDRO BELO ZUPCO SOBRINHO</td>
+<td align="left" width="198" colspan="1" class="datai">Adalcir Ceccatto</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">110023</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870837</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA DE LOURDE SCHLICHTING</td>
+<td align="left" width="198" colspan="1" class="datap">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">110003</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870748</td>
+<td align="left" width="198" colspan="1" class="datai">SIRLEI PEREIRA DUARTE</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">109707</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870443</td>
+<td align="left" width="198" colspan="1" class="datap">NICOLE TASCHECK</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109996</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870760</td>
+<td align="left" width="198" colspan="1" class="datai">AURORA SALETE VEIGA</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">109998</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870726</td>
+<td align="left" width="198" colspan="1" class="datap">AMANDA  ZANELLA</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109977</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870775</td>
+<td align="left" width="198" colspan="1" class="datai">ILSE MARIA KOROLL SONEGO</td>
+<td align="left" width="198" colspan="1" class="datai">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109987</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870830</td>
+<td align="left" width="198" colspan="1" class="datap">MANOEL PAULO KEMER</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109944</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870587</td>
+<td align="left" width="198" colspan="1" class="datai">SILVANA PEDROSO</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">109955</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870848</td>
+<td align="left" width="198" colspan="1" class="datap">GERALDO BRIZOT</td>
+<td align="left" width="198" colspan="1" class="datap">Gessica de Oliveira</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109954</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870750</td>
+<td align="left" width="198" colspan="1" class="datai">RAFAEL RIGO</td>
+<td align="left" width="198" colspan="1" class="datai">Emanuele Varela da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">109956</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870824</td>
+<td align="left" width="198" colspan="1" class="datap">IVAN CAREGNATO</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datap">109961</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870738</td>
+<td align="left" width="198" colspan="1" class="datai">CINTIA SAVIAN </td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109969</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870741</td>
+<td align="left" width="198" colspan="1" class="datap">OLGA CORSO</td>
+<td align="left" width="198" colspan="1" class="datap">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109971</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870739</td>
+<td align="left" width="198" colspan="1" class="datai">LUCIANA STRATIMAN</td>
+<td align="left" width="198" colspan="1" class="datai">Rafaela Nunes da Silva</td>
+<td align="left" width="198" colspan="1" class="datai">Aline Loraschi</td>
+<td align="left" width="198" colspan="1" class="datai">109971</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-08</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870672</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA DA CONCEI??O ANTUNES DOS </td>
+<td align="left" width="198" colspan="1" class="datap">Cristiane Maria Bussolaro Zanotto</td>
+<td align="left" width="198" colspan="1" class="datap">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datap">109975</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870733</td>
+<td align="left" width="198" colspan="1" class="datai">ERVINO RATHJE</td>
+<td align="left" width="198" colspan="1" class="datai">Andre Antonio Splendor</td>
+<td align="left" width="198" colspan="1" class="datai">Cleici Maria Sotili</td>
+<td align="left" width="198" colspan="1" class="datai">109976</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870856</td>
+<td align="left" width="198" colspan="1" class="datap">DELVE MARIA PONTEL</td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62694</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870855</td>
+<td align="left" width="198" colspan="1" class="datai">MARCIO DOS SANTOS (FBGO)</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62699</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870857</td>
+<td align="left" width="198" colspan="1" class="datap">ERMINDO SCHULTZ</td>
+<td align="left" width="198" colspan="1" class="datap">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datap">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datap">624875</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-07</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870973</td>
+<td align="left" width="198" colspan="1" class="datai">GABRIEL SCHNEIDER</td>
+<td align="left" width="198" colspan="1" class="datai">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datai">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datai">62750</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870973</td>
+<td align="left" width="198" colspan="1" class="datap">GABRIEL SCHNEIDER</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datap">62750</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870979</td>
+<td align="left" width="198" colspan="1" class="datai">FELIPE DIAS DE ANDRADE</td>
+<td align="left" width="198" colspan="1" class="datai">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datai">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datai">627776</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870971</td>
+<td align="left" width="198" colspan="1" class="datap">MARIA JOSE POLESE</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">Tiago Longo Pereira</td>
+<td align="left" width="198" colspan="1" class="datap">62799</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870856</td>
+<td align="left" width="198" colspan="1" class="datai">DELVE MARIA PONTEL</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62694</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870855</td>
+<td align="left" width="198" colspan="1" class="datap">MARCIO DOS SANTOS (FBGO)</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62699</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870558</td>
+<td align="left" width="198" colspan="1" class="datai">FELINTO MITTANCK</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datai">62434</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870550</td>
+<td align="left" width="198" colspan="1" class="datap">JOAO PEDRO MCKENNA</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datap">62417</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-05</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">869760</td>
+<td align="left" width="198" colspan="1" class="datai">ELSA LIDIA KRUGER PINZ</td>
+<td align="left" width="198" colspan="1" class="datai">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datai">Felipe Dias de Andrade</td>
+<td align="left" width="198" colspan="1" class="datai">61942</td>
+<td align="left" width="198" colspan="1" class="datai">2016-09-27</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870545</td>
+<td align="left" width="198" colspan="1" class="datap">MARILEI GON?ALVES</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">Taciane Mittanck Fantin</td>
+<td align="left" width="198" colspan="1" class="datap">62489</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-04</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">869454</td>
+<td align="left" width="198" colspan="1" class="datai">ANA JULIA MELLO PIERDONA</td>
+<td align="left" width="198" colspan="1" class="datai">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datai">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datai">62168</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">869691</td>
+<td align="left" width="198" colspan="1" class="datap">EDUARDA PEREIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">Maiara Fabiane Lara Pinheiro</td>
+<td align="left" width="198" colspan="1" class="datap">62167</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-02</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870628</td>
+<td align="left" width="198" colspan="1" class="datai">MARIA LEODORO ALVES</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">49363</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-09</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870413</td>
+<td align="left" width="198" colspan="1" class="datap">ILDO PITOL</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-11</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870820</td>
+<td align="left" width="198" colspan="1" class="datai">GRAZIELE P KLEINCHIMIDT</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">49634</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870954</td>
+<td align="left" width="198" colspan="1" class="datap">ERNA RIBEIRO MAGOLTE</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49442</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870958</td>
+<td align="left" width="198" colspan="1" class="datai">DERCI ANTONIO FERNANDES</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49459</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870937</td>
+<td align="left" width="198" colspan="1" class="datap">LUIZ CARLOS SCHWINDEN</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49629</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">871087</td>
+<td align="left" width="198" colspan="1" class="datai">ELVIRA JUDITE PICCININ</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870813</td>
+<td align="left" width="198" colspan="1" class="datap">ULISSES NOGUEIRA DUARTE</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870806</td>
+<td align="left" width="198" colspan="1" class="datai">GERSON ANTONIO LORENO DA ROSA</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">49579</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870677</td>
+<td align="left" width="198" colspan="1" class="datap">PAULO ANTONIO LACOWISCK</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49570</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870630</td>
+<td align="left" width="198" colspan="1" class="datai">FATIMA APARECIDA PASSARIN GUELLER</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870975</td>
+<td align="left" width="198" colspan="1" class="datap">RENATA CRISTINA RIEGERDT</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">49567</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870682</td>
+<td align="left" width="198" colspan="1" class="datai">DINIZARTE RUTHES</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49549</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870956</td>
+<td align="left" width="198" colspan="1" class="datap">ROSELI RAYZER PEREIRA</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870811</td>
+<td align="left" width="198" colspan="1" class="datai">ELA DALLAZEN</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870961</td>
+<td align="left" width="198" colspan="1" class="datap">ELEONOR MENEGAT COMERLATO</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870563</td>
+<td align="left" width="198" colspan="1" class="datai">LEONOR MOREIRA SANTOS</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870965</td>
+<td align="left" width="198" colspan="1" class="datap">PAULO SERGIO DE DEUS</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870702</td>
+<td align="left" width="198" colspan="1" class="datai">IVETE BONASSI</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870807</td>
+<td align="left" width="198" colspan="1" class="datap">IGNES S D NADAL</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870425</td>
+<td align="left" width="198" colspan="1" class="datai">SANTINA PIRES DE SOUZA</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">49544</td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870823</td>
+<td align="left" width="198" colspan="1" class="datap">MIGUEL CALDERAN</td>
+<td align="left" width="198" colspan="1" class="datap">Kassiane Rossi</td>
+<td align="left" width="198" colspan="1" class="datap">Diana Regina Camargo</td>
+<td align="left" width="198" colspan="1" class="datap">49538</td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870632</td>
+<td align="left" width="198" colspan="1" class="datai">GESSELMA GATTI</td>
+<td align="left" width="198" colspan="1" class="datai">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870847</td>
+<td align="left" width="198" colspan="1" class="datap">GESSELMA GATTI</td>
+<td align="left" width="198" colspan="1" class="datap">Diane Antunes de Lima</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datai">870854</td>
+<td align="left" width="198" colspan="1" class="datai">VALDIR GONCALVES DE ALMEIDA</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datai"></td>
+<td align="left" width="198" colspan="1" class="datai">2019-10-10</td>
+</tr>
+<tr>
+<td align="left" width="198" colspan="1" class="datap">870388</td>
+<td align="left" width="198" colspan="1" class="datap">VILMA BOCO SESTREN</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap">Franciele da Rosa</td>
+<td align="left" width="198" colspan="1" class="datap"></td>
+<td align="left" width="198" colspan="1" class="datap">2019-10-10</td>
+</tr>
+</table>
+</html>
